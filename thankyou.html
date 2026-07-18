@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Poppins', sans-serif;
             background: #0B1732;
@@ -21,49 +26,113 @@
         }
         .thankyou-card {
             background: #fff;
-            padding: 60px 40px;
-            border-radius: 20px;
+            padding: 60px 50px;
+            border-radius: 24px;
             text-align: center;
-            max-width: 500px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 520px;
+            width: 90%;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+            animation: fadeIn 0.8s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         .thankyou-card .icon {
             font-size: 80px;
             color: #FF6A00;
             margin-bottom: 20px;
+            display: block;
+        }
+        .thankyou-card .checkmark {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 106, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        .thankyou-card .checkmark i {
+            font-size: 40px;
+            color: #FF6A00;
         }
         .thankyou-card h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: #0B1732;
+            margin-bottom: 12px;
         }
         .thankyou-card p {
             color: #6C757D;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+        .thankyou-card .highlight {
+            color: #FF6A00;
+            font-weight: 600;
         }
         .thankyou-card .btn {
             background: linear-gradient(135deg, #FF6A00, #FF8C00);
             color: #fff;
-            padding: 12px 40px;
-            border-radius: 8px;
+            padding: 14px 45px;
+            border-radius: 10px;
             font-weight: 600;
+            font-size: 1rem;
             text-decoration: none;
             display: inline-block;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
         .thankyou-card .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 106, 0, 0.35);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 106, 0, 0.4);
             color: #fff;
+        }
+        .thankyou-card .btn i {
+            margin-right: 8px;
+        }
+        .thankyou-card .divider {
+            width: 60px;
+            height: 3px;
+            background: #FF6A00;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        @media (max-width: 480px) {
+            .thankyou-card {
+                padding: 40px 25px;
+            }
+            .thankyou-card h1 {
+                font-size: 1.6rem;
+            }
+            .thankyou-card p {
+                font-size: 0.95rem;
+            }
+            .thankyou-card .btn {
+                padding: 12px 30px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="thankyou-card">
-        <div class="icon">✅</div>
+        <div class="checkmark">
+            <i class="fas fa-check"></i>
+        </div>
         <h1>Thank You!</h1>
-        <p>Your message has been sent successfully. <br>Our team will get back to you within 24 hours.</p>
-        <a href="index.html" class="btn">Back to Home</a>
+        <div class="divider"></div>
+        <p>Your message has been sent <span class="highlight">successfully</span>.</p>
+        <p>Our team will get back to you within <span class="highlight">24 hours</span>.</p>
+        <br>
+        <a href="index.html" class="btn">
+            <i class="fas fa-home"></i> Back to Home
+        </a>
     </div>
 </body>
 </html>
