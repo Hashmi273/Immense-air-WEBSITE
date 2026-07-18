@@ -21,6 +21,50 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.immenseair.com/contact.html">
     
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        .page-hero{background:linear-gradient(135deg,#0B1732 0%,#1E3A5F 50%,#0B1732 100%);padding:140px 0 60px;position:relative;overflow:hidden}
+        .page-hero h1{color:#fff;font-size:3.5rem;font-weight:800}
+        .page-hero p{color:rgba(255,255,255,.5);font-size:1.25rem}
+        .navbar{background:#0B1732!important;padding:.8rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
+        .navbar .navbar-brand{color:#fff!important;font-size:1.5rem;font-weight:800;letter-spacing:-.5px;display:flex;align-items:center;text-decoration:none}
+        .navbar .navbar-brand span{color:#FF6A00}
+        .navbar .navbar-brand img{height:35px;width:auto;margin-right:10px}
+        .navbar .nav-link{color:rgba(255,255,255,.8)!important;font-weight:500;padding:.6rem 1rem!important;text-decoration:none}
+        .navbar .nav-link:hover,.navbar .nav-link.active{color:#FF6A00!important}
+        .navbar .btn-nav-cta{background:linear-gradient(135deg,#FF6A00 0%,#FF8C00 100%);color:#fff!important;padding:.5rem 1.5rem!important;border-radius:8px;font-weight:600}
+        .navbar .btn-nav-cta:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(255,106,0,.4)}
+        .contact-form-wrapper{background:#f8f9fa;border-radius:16px;border:1px solid rgba(11,23,50,.06)}
+        .contact-form-wrapper .form-control,.contact-form-wrapper .form-select{border:1px solid rgba(11,23,50,.1);border-radius:8px;padding:.75rem 1rem;font-size:.95rem;background:#fff}
+        .contact-form-wrapper .form-control:focus,.contact-form-wrapper .form-select:focus{border-color:#FF6A00;box-shadow:0 0 0 3px rgba(255,106,0,.15)}
+        .contact-info-item .contact-icon{width:50px;height:50px;min-width:50px;display:flex;align-items:center;justify-content:center;background:rgba(255,106,0,.1);border-radius:8px;color:#FF6A00;font-size:1.2rem}
+        .contact-social{display:inline-block;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;background:rgba(11,23,50,.06);color:#0B1732;transition:all .3s ease;font-size:16px}
+        .contact-social:hover{background:#FF6A00;color:#fff;transform:translateY(-3px)}
+        .section-badge{display:inline-block;padding:.3rem 1rem;background:rgba(255,106,0,.1);color:#FF6A00;border-radius:9999px;font-size:.85rem;font-weight:600;margin-bottom:1rem;letter-spacing:.5px}
+        .section-title{font-size:2.75rem;font-weight:700;color:#0B1732}
+        .map-container{border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(11,23,50,.12)}
+        .form-check-input[type="checkbox"]{width:18px;height:18px;margin-top:3px;border-radius:4px;border:2px solid rgba(11,23,50,.2);cursor:pointer}
+        .form-check-input[type="checkbox"]:checked{background-color:#FF6A00;border-color:#FF6A00}
+        .form-check-label{font-size:.9rem;color:#6C757D}
+        .btn-primary-custom{background:linear-gradient(135deg,#FF6A00 0%,#FF8C00 100%);color:#fff;padding:.8rem 2.2rem;border-radius:8px;font-weight:600;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(255,106,0,.35);display:inline-flex;align-items:center;gap:.5rem;text-decoration:none}
+        .btn-primary-custom:hover{transform:translateY(-3px);box-shadow:0 8px 35px rgba(255,106,0,.45);color:#fff}
+        .social-link{display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none}
+        .social-link:hover{background:#FF6A00;color:#fff!important;transform:translateY(-3px)}
+        .footer-links li{margin-bottom:8px;list-style:none}
+        .footer-links a{color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;transition:all .2s ease}
+        .footer-links a:hover{color:#FF6A00!important;padding-left:5px}
+        .footer-contact li{color:rgba(255,255,255,.5);font-size:.9rem;list-style:none;margin-bottom:8px}
+        .footer-contact li i{width:20px}
+        .text-secondary{color:#FF6A00!important}
+        @media(max-width:768px){.page-hero{padding-top:120px!important}.page-hero h1{font-size:2rem}.contact-form-wrapper{padding:1.5rem!important}.map-container{height:250px!important}}
+    </style>
+    
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -31,7 +75,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     
@@ -46,18 +90,14 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container">
-                <!-- Brand / Logo -->
                 <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo/logo.jpg" alt="Immense Air" loading="lazy">
                     IMMENSE <span>AIR</span>
                 </a>
-
-                <!-- Toggler Button (Mobile) -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Navbar Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-lg-center">
                         <li class="nav-item">
@@ -113,13 +153,13 @@
     <main>
 
         <!-- ===== PAGE HERO ===== -->
-        <section class="page-hero" style="padding-top: 140px; padding-bottom: 60px; background: var(--gradient-primary);">
+        <section class="page-hero">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
-                        <span class="section-badge text-white">Contact Us</span>
+                        <span class="section-badge text-white" style="color:#fff!important;">Contact Us</span>
                         <h1 class="text-white">Get In Touch</h1>
-                        <p class="text-white-50 lead">
+                        <p class="text-white-50 lead" style="color:rgba(255,255,255,.5)!important;">
                             Have questions? We'd love to hear from you. Let's discuss how we can help 
                             transform your business communication.
                         </p>
@@ -135,8 +175,8 @@
                     
                     <!-- Contact Info -->
                     <div class="col-lg-5">
-                        <h2 class="section-title" style="font-size: 2rem;">Let's Start a <br><span class="text-secondary">Conversation</span></h2>
-                        <p class="text-gray">
+                        <h2 class="section-title" style="font-size:2rem;">Let's Start a <br><span class="text-secondary">Conversation</span></h2>
+                        <p class="text-gray" style="color:#6C757D;">
                             Fill out the form and our team will get back to you within 24 hours.
                         </p>
                         
@@ -146,8 +186,8 @@
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
                                 <div>
-                                    <h6 class="fw-semibold mb-0">Phone</h6>
-                                    <p class="text-gray mb-0">+91 9372 38222</p>
+                                    <h6 class="fw-semibold mb-0" style="font-weight:600;color:#0B1732;">Phone</h6>
+                                    <p class="text-gray mb-0" style="color:#6C757D;">+91 9372 38222</p>
                                 </div>
                             </div>
                             
@@ -156,8 +196,8 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div>
-                                    <h6 class="fw-semibold mb-0">Email</h6>
-                                    <p class="text-gray mb-0">sales@immensecontact.com</p>
+                                    <h6 class="fw-semibold mb-0" style="font-weight:600;color:#0B1732;">Email</h6>
+                                    <p class="text-gray mb-0" style="color:#6C757D;">sales@immensecontact.com</p>
                                 </div>
                             </div>
                             
@@ -166,8 +206,8 @@
                                     <i class="fas fa-globe"></i>
                                 </div>
                                 <div>
-                                    <h6 class="fw-semibold mb-0">Website</h6>
-                                    <p class="text-gray mb-0">www.immensecontact.com</p>
+                                    <h6 class="fw-semibold mb-0" style="font-weight:600;color:#0B1732;">Website</h6>
+                                    <p class="text-gray mb-0" style="color:#6C757D;">www.immensecontact.com</p>
                                 </div>
                             </div>
                             
@@ -176,15 +216,15 @@
                                     <i class="fas fa-clock"></i>
                                 </div>
                                 <div>
-                                    <h6 class="fw-semibold mb-0">Working Hours</h6>
-                                    <p class="text-gray mb-0">9:30am – 5:00pm IST (Mon-Fri)</p>
+                                    <h6 class="fw-semibold mb-0" style="font-weight:600;color:#0B1732;">Working Hours</h6>
+                                    <p class="text-gray mb-0" style="color:#6C757D;">10:00am – 7:00pm IST (Mon-Sat)</p>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- Social Links -->
                         <div class="mt-4">
-                            <h6 class="fw-semibold">Follow Us</h6>
+                            <h6 class="fw-semibold" style="font-weight:600;color:#0B1732;">Follow Us</h6>
                             <div class="d-flex gap-3 mt-2">
                                 <a href="#" class="contact-social"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#" class="contact-social"><i class="fab fa-twitter"></i></a>
@@ -196,33 +236,41 @@
                     
                     <!-- Contact Form -->
                     <div class="col-lg-7">
-                        <div class="contact-form-wrapper p-4 p-lg-5 bg-light-gray rounded-4">
-                            <h3 class="mb-4">Send Us a Message</h3>
+                        <div class="contact-form-wrapper p-4 p-lg-5">
+                            <h3 class="mb-4" style="font-weight:600;color:#0B1732;">Send Us a Message</h3>
                             
-                            <form id="contactForm" action="assets/api/contact.php" method="POST">
+                            <!-- 👇 FORM ACTION CHANGE KIYA 👇 -->
+                            <form id="contactForm" action="https://formsubmit.co/support@immensesmartsolutions.com" method="POST">
+                                
+                                <!-- ===== FormSubmit Hidden Fields ===== -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_subject" value="New Enquiry from Immense Air">
+                                <input type="hidden" name="_next" value="https://immenseair.in/thankyou.html">
+                                
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <label for="name" class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+                                        <label for="name" class="form-label fw-semibold" style="font-weight:600;color:#0B1732;">Full Name <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control form-control-lg" id="name" name="name" 
                                                placeholder="Your full name" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="company" class="form-label fw-semibold">Company Name</label>
+                                        <label for="company" class="form-label fw-semibold" style="font-weight:600;color:#0B1732;">Company Name</label>
                                         <input type="text" class="form-control form-control-lg" id="company" name="company" 
                                                placeholder="Your company name">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="mobile" class="form-label fw-semibold">Mobile Number <span class="text-danger">*</span></label>
+                                        <label for="mobile" class="form-label fw-semibold" style="font-weight:600;color:#0B1732;">Mobile Number <span class="text-danger">*</span></label>
                                         <input type="tel" class="form-control form-control-lg" id="mobile" name="mobile" 
                                                placeholder="+91 98765 43210" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="email" class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+                                        <label for="email" class="form-label fw-semibold" style="font-weight:600;color:#0B1732;">Email Address <span class="text-danger">*</span></label>
                                         <input type="email" class="form-control form-control-lg" id="email" name="email" 
                                                placeholder="you@example.com" required>
                                     </div>
                                     <div class="col-12">
-                                        <label for="service" class="form-label fw-semibold">Service Interested In <span class="text-danger">*</span></label>
+                                        <label for="service" class="form-label fw-semibold" style="font-weight:600;color:#0B1732;">Service Interested In <span class="text-danger">*</span></label>
                                         <select class="form-select form-select-lg" id="service" name="service" required>
                                             <option value="">Select a service...</option>
                                             <option value="bulk-sms">Bulk SMS</option>
@@ -235,7 +283,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <label for="message" class="form-label fw-semibold">Message <span class="text-danger">*</span></label>
+                                        <label for="message" class="form-label fw-semibold" style="font-weight:600;color:#0B1732;">Message <span class="text-danger">*</span></label>
                                         <textarea class="form-control form-control-lg" id="message" name="message" 
                                                   rows="5" placeholder="Tell us about your requirements..." required></textarea>
                                     </div>
@@ -250,7 +298,7 @@
                                             </label>
                                         </div>
                                         <small class="text-muted">
-                                            <i class="fas fa-lock me-1"></i> Your data is safe with us. Read our <a href="#" class="text-secondary">Privacy Policy</a>.
+                                            <i class="fas fa-lock me-1"></i> Your data is safe with us. Read our <a href="#" class="text-secondary" style="color:#FF6A00!important;">Privacy Policy</a>.
                                         </small>
                                     </div>
                                     
@@ -271,30 +319,34 @@
         </section>
 
         <!-- ===== GOOGLE MAP SECTION ===== -->
-        <section class="py-5 bg-light-gray">
+        <section class="py-5 bg-light-gray" style="background:#f8f9fa;">
             <div class="container">
                 <div class="text-center mb-4">
                     <span class="section-badge">Our Location</span>
-                    <h2 class="section-title" style="font-size: 2rem;">Find <span class="text-secondary">Us</span></h2>
+                    <h2 class="section-title" style="font-size:2rem;">Find <span class="text-secondary" style="color:#FF6A00!important;">Us</span></h2>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <div class="map-container rounded-4 overflow-hidden" style="height: 400px; width: 100%;">
-                            <!-- Google Map Embed - Apna location yahan daalo -->
-                             <iframe 
+                        <div class="map-container" style="height:400px;width:100%;border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(11,23,50,.12);">
+                            <iframe 
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.234567890123!2d72.83123456789012!3d19.185678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b123456789ab%3A0x123456789abcdef0!2s9%2C%20Business%20Bay%2C%20Off%20Link%20Road%2C%20Behind%20Evershine%20Mall%2C%20Mindspace%2C%20Malad%20(W)%2C%20Mumbai%2C%20400064!5e0!3m2!1sen!2sin!4v1700000000000" 
                                 width="100%" 
                                 height="400" 
                                 style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
+                                loading="lazy"
+                                allowfullscreen>
                             </iframe>
                         </div>
                         <div class="text-center mt-3">
-                            <p class="text-muted mb-0">
-                                <i class="fas fa-map-marker-alt text-secondary me-2"></i>
-                                Mumbai, Maharashtra, India
+                            <p class="text-muted mb-0" style="color:#6C757D;">
+                                <i class="fas fa-map-marker-alt text-secondary me-2" style="color:#FF6A00!important;"></i>
+                                <strong>9, Business Bay, Off Link Road, Behind Evershine Mall, Mindspace, Malad (W), Mumbai - 400064</strong>
+                            </p>
+                            <p class="text-muted small mt-1" style="color:#6C757D;font-size:.875rem;">
+                                <i class="fas fa-clock me-1"></i> Mon-Sat: 10:00 AM - 7:00 PM | Sunday: 10:00 AM - 7:00 PM
+                            </p>
+                            <p class="text-muted small" style="color:#6C757D;font-size:.875rem;">
+                                <i class="fas fa-phone me-1"></i> +91 80505 73555
                             </p>
                         </div>
                     </div>
@@ -307,79 +359,56 @@
     <!-- ============================================
          FOOTER
          ============================================ -->
-    <footer class="bg-primary-color text-white pt-5 pb-4">
+    <footer style="background:#0B1732!important;border-top:3px solid #FF6A00;padding-top:3rem;padding-bottom:1.5rem;color:#fff;">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white fw-bold">IMMENSE <span class="text-secondary">AIR</span></h4>
-                    <p class="text-white-50 small mt-3" style="max-width: 350px;">
+                    <h4 style="font-size:1.6rem;font-weight:700;color:#fff;letter-spacing:-.5px;">IMMENSE <span style="color:#FF6A00;">AIR</span></h4>
+                    <p style="color:rgba(255,255,255,.5);font-size:.875rem;max-width:350px;margin-top:.75rem;">
                         We empower businesses with intelligent communication solutions that drive engagement, 
                         automation & growth.
                     </p>
                     <div class="mt-3">
-                        <a href="#" class="text-white-50 me-3 social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="text-white-50 me-3 social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-white-50 me-3 social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-white-50 social-link" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-
                 <div class="col-lg-2 col-md-6">
-                    <h6 class="text-white fw-semibold mb-3">Products</h6>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="products/bulk-sms.html" class="text-white-50 text-decoration-none">SMS Services</a></li>
-                        <li><a href="products/whatsapp-api.html" class="text-white-50 text-decoration-none">WhatsApp API</a></li>
-                        <li><a href="products/rcs.html" class="text-white-50 text-decoration-none">RCS Messaging</a></li>
-                        <li><a href="products/voice.html" class="text-white-50 text-decoration-none">Voice Solutions</a></li>
-                        <li><a href="products/ivr-obd.html" class="text-white-50 text-decoration-none">IVR & OBD</a></li>
-                        <li><a href="products/smpp.html" class="text-white-50 text-decoration-none">SMPP & API</a></li>
+                    <h6 style="font-size:1rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;position:relative;padding-bottom:10px;">Products</h6>
+                    <ul style="list-style:none;padding-left:0;">
+                        <li style="margin-bottom:8px;"><a href="products/bulk-sms.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">SMS Services</a></li>
+                        <li style="margin-bottom:8px;"><a href="products/whatsapp-api.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">WhatsApp API</a></li>
+                        <li style="margin-bottom:8px;"><a href="products/rcs.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">RCS Messaging</a></li>
+                        <li style="margin-bottom:8px;"><a href="products/voice.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Voice Solutions</a></li>
+                        <li style="margin-bottom:8px;"><a href="products/ivr-obd.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">IVR & OBD</a></li>
+                        <li style="margin-bottom:8px;"><a href="products/smpp.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">SMPP & API</a></li>
                     </ul>
                 </div>
-
                 <div class="col-lg-2 col-md-6">
-                    <h6 class="text-white fw-semibold mb-3">Company</h6>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Careers</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Partners</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">News & Updates</a></li>
-                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    <h6 style="font-size:1rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;position:relative;padding-bottom:10px;">Company</h6>
+                    <ul style="list-style:none;padding-left:0;">
+                        <li style="margin-bottom:8px;"><a href="about.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">About Us</a></li>
+                        <li style="margin-bottom:8px;"><a href="#" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Careers</a></li>
+                        <li style="margin-bottom:8px;"><a href="#" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Partners</a></li>
+                        <li style="margin-bottom:8px;"><a href="#" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">News & Updates</a></li>
+                        <li style="margin-bottom:8px;"><a href="contact.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Contact Us</a></li>
                     </ul>
                 </div>
-
                 <div class="col-lg-4 col-md-6">
-                    <h6 class="text-white fw-semibold mb-3">Contact Us</h6>
-                    <ul class="list-unstyled footer-contact">
-                        <li class="text-white-50 mb-2">
-                            <i class="fas fa-phone me-2 text-secondary"></i> +91 9372 38222
-                        </li>
-                        <li class="text-white-50 mb-2">
-                            <i class="fas fa-envelope me-2 text-secondary"></i> sales@immensecontact.com
-                        </li>
-                        <li class="text-white-50 mb-2">
-                            <i class="fas fa-globe me-2 text-secondary"></i> www.immensecontact.com
-                        </li>
-                        <li class="text-white-50">
-                            <i class="fas fa-clock me-2 text-secondary"></i> 9:30am – 5:00pm IST
-                        </li>
+                    <h6 style="font-size:1rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;position:relative;padding-bottom:10px;">Contact Us</h6>
+                    <ul style="list-style:none;padding-left:0;">
+                        <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;"><i class="fas fa-phone me-2" style="color:#FF6A00;width:20px;"></i> +91 9372 38222</li>
+                        <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;"><i class="fas fa-envelope me-2" style="color:#FF6A00;width:20px;"></i> sales@immensecontact.com</li>
+                        <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;"><i class="fas fa-globe me-2" style="color:#FF6A00;width:20px;"></i> www.immensecontact.com</li>
+                        <li style="color:rgba(255,255,255,.5);font-size:.9rem;"><i class="fas fa-clock me-2" style="color:#FF6A00;width:20px;"></i> 9:30am – 5:00pm IST</li>
                     </ul>
                 </div>
             </div>
-
-            <hr class="border-secondary opacity-25 my-4">
-
+            <hr style="border-color:rgba(255,255,255,.1);margin:1.5rem 0;">
             <div class="text-center">
-                <p class="small text-white-50 mb-0">
-                    &copy; 2026 Immense Air Pvt. Ltd. All Rights Reserved.
-                </p>
+                <p style="color:rgba(255,255,255,.5);font-size:.875rem;margin-bottom:0;">&copy; 2026 Immense Air Pvt. Ltd. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
