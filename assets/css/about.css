@@ -1,0 +1,43 @@
+/* ============================================
+   ABOUT PAGE STYLES
+   ============================================ */
+
+/* ===== Page Hero ===== */
+.page-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 106, 0, 0.05);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.page-hero h1 {
+    font-size: 3.5rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding-top: 120px !important;
+        padding-bottom: 50px !important;
+    }
+    
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+}

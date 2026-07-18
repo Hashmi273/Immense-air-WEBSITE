@@ -1,0 +1,93 @@
+/* ============================================
+   DEVELOPERS PAGE STYLES
+   ============================================ */
+
+/* ===== Page Hero ===== */
+.page-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 106, 0, 0.05);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.page-hero h1 {
+    font-size: 3.5rem;
+}
+
+/* ===== Dev Cards ===== */
+.dev-card {
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.dev-card:hover {
+    transform: translateY(-8px);
+}
+
+.dev-card .dev-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 106, 0, 0.08);
+    border-radius: var(--radius-full);
+    margin: 0 auto 1rem;
+    color: var(--secondary);
+    font-size: 1.8rem;
+    transition: all var(--transition-normal);
+}
+
+.dev-card:hover .dev-icon {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+/* ===== Language Cards ===== */
+.language-card {
+    padding: 1.5rem 1rem;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    border: 1px solid rgba(11, 23, 50, 0.06);
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.language-card i {
+    transition: all var(--transition-normal);
+}
+
+.language-card:hover i {
+    transform: scale(1.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding-top: 120px !important;
+        padding-bottom: 50px !important;
+    }
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+}
