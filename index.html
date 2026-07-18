@@ -32,20 +32,43 @@
         .hero-section h1{color:#fff;font-size:3.8rem;font-weight:800;line-height:1.1}
         .hero-section h1 span{color:#FF6A00}
         .hero-section p{color:rgba(255,255,255,.8);font-size:1.15rem;max-width:550px}
-        .btn-primary-custom{background:linear-gradient(135deg,#FF6A00 0%,#FF8C00 100%);color:#fff;padding:.8rem 2.2rem;border-radius:8px;font-weight:600;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(255,106,0,.35);display:inline-flex;align-items:center;gap:.5rem}
+        .btn-primary-custom{background:linear-gradient(135deg,#FF6A00 0%,#FF8C00 100%);color:#fff;padding:.8rem 2.2rem;border-radius:8px;font-weight:600;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(255,106,0,.35);display:inline-flex;align-items:center;gap:.5rem;text-decoration:none}
         .btn-primary-custom:hover{transform:translateY(-3px);box-shadow:0 8px 35px rgba(255,106,0,.45);color:#fff}
-        .btn-secondary-custom{background:transparent;color:#fff;padding:.8rem 2.2rem;border-radius:8px;font-weight:600;border:2px solid #fff;display:inline-flex;align-items:center;gap:.5rem}
+        .btn-secondary-custom{background:transparent;color:#fff;padding:.8rem 2.2rem;border-radius:8px;font-weight:600;border:2px solid #fff;display:inline-flex;align-items:center;gap:.5rem;text-decoration:none}
         .btn-secondary-custom:hover{background:#fff;color:#0B1732;transform:translateY(-3px)}
         .navbar{background:#0B1732!important;padding:.8rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
-        .navbar .navbar-brand{color:#fff!important;font-size:1.5rem;font-weight:800;letter-spacing:-.5px;display:flex;align-items:center}
+        .navbar .navbar-brand{color:#fff!important;font-size:1.5rem;font-weight:800;letter-spacing:-.5px;display:flex;align-items:center;text-decoration:none}
         .navbar .navbar-brand span{color:#FF6A00}
         .navbar .navbar-brand img{height:35px;width:auto;margin-right:10px}
-        .navbar .nav-link{color:rgba(255,255,255,.8)!important;font-weight:500;padding:.6rem 1rem!important}
+        .navbar .nav-link{color:rgba(255,255,255,.8)!important;font-weight:500;padding:.6rem 1rem!important;text-decoration:none}
         .navbar .nav-link:hover,.navbar .nav-link.active{color:#FF6A00!important}
         .navbar .btn-nav-cta{background:linear-gradient(135deg,#FF6A00 0%,#FF8C00 100%);color:#fff!important;padding:.5rem 1.5rem!important;border-radius:8px;font-weight:600}
-        .navbar .btn-nav-cta:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(255,106,0,.4)}
+        .navbar .btn-nav-cta:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(255,106,0,.4);color:#fff!important}
         .hero-image{max-width:100%;height:auto;animation:float 6s ease-in-out infinite}
         @keyframes float{0%{transform:translateY(0px)}50%{transform:translateY(-20px)}100%{transform:translateY(0px)}}
+        .navbar .dropdown-menu{background:#fff;border:none;border-radius:8px;box-shadow:0 8px 32px rgba(11,23,50,.16);padding:.5rem 0;min-width:220px;margin-top:.5rem;border-top:3px solid #FF6A00}
+        .navbar .dropdown-item{color:#0B1732;font-weight:500;font-size:.9rem;padding:.6rem 1.5rem;text-decoration:none;display:block}
+        .navbar .dropdown-item:hover{background:rgba(255,106,0,.08);color:#FF6A00;padding-left:1.8rem}
+        .navbar .dropdown-item i{width:20px;color:#FF6A00;margin-right:8px}
+        .section-badge{display:inline-block;padding:.3rem 1rem;background:rgba(255,106,0,.1);color:#FF6A00;border-radius:9999px;font-size:.85rem;font-weight:600;margin-bottom:1rem;letter-spacing:.5px}
+        .stat-number{font-size:3rem;font-weight:800;color:#FF6A00;line-height:1.1;display:block}
+        .stat-label{font-size:1rem;color:#6C757D;font-weight:500}
+        .card-custom{background:#fff;border-radius:16px;padding:2rem;box-shadow:0 2px 4px rgba(11,23,50,.08);transition:all .3s ease;border:1px solid rgba(11,23,50,.06);height:100%}
+        .card-custom:hover{transform:translateY(-8px);box-shadow:0 8px 32px rgba(11,23,50,.16)}
+        .card-custom .card-icon{width:60px;height:60px;display:flex;align-items:center;justify-content:center;background:rgba(255,106,0,.1);border-radius:8px;margin-bottom:1rem;color:#FF6A00;font-size:1.5rem}
+        .bg-light-gray{background-color:#F8F9FA}
+        .text-secondary{color:#FF6A00!important}
+        .text-white-50{color:rgba(255,255,255,.5)!important}
+        .social-link{display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none}
+        .social-link:hover{background:#FF6A00;color:#fff!important;transform:translateY(-3px)}
+        .footer-links li{margin-bottom:8px;list-style:none}
+        .footer-links a{color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;transition:all .2s ease}
+        .footer-links a:hover{color:#FF6A00!important;padding-left:5px}
+        .footer-contact li{color:rgba(255,255,255,.5);font-size:.9rem;list-style:none;margin-bottom:8px}
+        .footer-contact li i{width:20px}
+        @media(max-width:992px){h1{font-size:2.8rem}.stat-number{font-size:2.5rem}}
+        @media(max-width:768px){h1{font-size:2.2rem}.stat-number{font-size:2rem}.hero-section{padding:100px 0 60px}.btn{padding:.6rem 1.5rem;font-size:.9rem}}
+        @media(max-width:576px){h1{font-size:1.8rem}.stat-number{font-size:1.6rem}.card-custom{padding:1.25rem}}
     </style>
     
     <!-- Bootstrap 5 CSS -->
@@ -68,70 +91,37 @@
 <body>
 
     <!-- ============================================
-         HEADER / NAVBAR - SAHI KARO
+         HEADER / NAVBAR
          ============================================ -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container">
-                <!-- Brand / Logo -->
                 <a class="navbar-brand" href="index.html">
-                    <a class="navbar-brand" href="index.html">
-    <img src="assets/images/logo/logo.jpg" alt="Immense Air" loading="lazy">
-    IMMENSE <span>AIR</span>
-</a>
+                    <img src="assets/images/logo/logo.jpg" alt="Immense Air" loading="lazy">
                     IMMENSE <span>AIR</span>
                 </a>
-
-                <!-- Toggler Button (Mobile) -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Navbar Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-lg-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" 
-                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Products
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                                <li><a class="dropdown-item" href="products/bulk-sms.html">
-                                    <i class="fas fa-sms"></i> Bulk SMS
-                                </a></li>
-                                <li><a class="dropdown-item" href="products/whatsapp-api.html">
-                                    <i class="fab fa-whatsapp"></i> WhatsApp API
-                                </a></li>
-                                <li><a class="dropdown-item" href="products/rcs.html">
-                                    <i class="fas fa-comment-dots"></i> RCS Messaging
-                                </a></li>
-                                <li><a class="dropdown-item" href="products/voice.html">
-                                    <i class="fas fa-phone-alt"></i> Voice Solutions
-                                </a></li>
-                                <li><a class="dropdown-item" href="products/ivr-obd.html">
-                                    <i class="fas fa-microphone-alt"></i> IVR / OBD
-                                </a></li>
-                                <li><a class="dropdown-item" href="products/smpp.html">
-                                    <i class="fas fa-code"></i> SMPP API
-                                </a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" data-bs-toggle="dropdown">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="products/bulk-sms.html"><i class="fas fa-sms"></i> Bulk SMS</a></li>
+                                <li><a class="dropdown-item" href="products/whatsapp-api.html"><i class="fab fa-whatsapp"></i> WhatsApp API</a></li>
+                                <li><a class="dropdown-item" href="products/rcs.html"><i class="fas fa-comment-dots"></i> RCS Messaging</a></li>
+                                <li><a class="dropdown-item" href="products/voice.html"><i class="fas fa-phone-alt"></i> Voice Solutions</a></li>
+                                <li><a class="dropdown-item" href="products/ivr-obd.html"><i class="fas fa-microphone-alt"></i> IVR / OBD</a></li>
+                                <li><a class="dropdown-item" href="products/smpp.html"><i class="fas fa-code"></i> SMPP API</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="developers.html">Developers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="resources.html">Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-nav-cta" href="contact.html">Contact Us</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="developers.html">Developers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link btn-nav-cta" href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -139,275 +129,289 @@
     </header>
 
     <!-- ============================================
-         HERO SECTION - YAHAN IMAGE AAYEGI
+         PAGE CONTENT - HOMEPAGE
          ============================================ -->
-    <section class="hero-section" id="hero">
-        <div class="container">
-            <div class="row align-items-center" style="min-height: 100vh; padding-top: 80px;">
-                <!-- Left Side - Text -->
-                <div class="col-lg-7">
-                    <span class="section-badge text-white">#1 Enterprise Communication Platform</span>
-                    <h1 class="display-3 fw-bold text-white">
-                        SMART COMMUNICATION, <br>
-                        <span>STRONGER BUSINESS.</span>
-                    </h1>
-                    <p class="lead text-white-50">
-                        Communicate Smarter. Engage Better. Grow Faster.
-                    </p>
-                    <p class="text-white-50">
-                        Immense Smart Solutions is your trusted partner for Intelligent Communication Solutions. 
-                        From SMS to WhatsApp, RCS to Voice – we help businesses connect, engage & grow.
-                    </p>
-                    <div class="mt-4">
-                        <a href="contact.html" class="btn btn-primary-custom btn-lg me-3">
-                            Explore Solutions <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                        <a href="contact.html" class="btn btn-secondary-custom btn-lg">
-                            Talk to Expert
-                        </a>
+    <main>
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero-section" id="hero">
+            <div class="container">
+                <div class="row align-items-center" style="min-height: 100vh; padding-top: 80px;">
+                    <div class="col-lg-7">
+                        <span class="section-badge text-white">#1 Enterprise Communication Platform</span>
+                        <h1 class="display-3 fw-bold text-white">
+                            SMART COMMUNICATION, <br>
+                            <span>STRONGER BUSINESS.</span>
+                        </h1>
+                        <p class="lead text-white-50">Communicate Smarter. Engage Better. Grow Faster.</p>
+                        <p class="text-white-50">Immense Smart Solutions is your trusted partner for Intelligent Communication Solutions. From SMS to WhatsApp, RCS to Voice – we help businesses connect, engage & grow.</p>
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary-custom btn-lg me-3">Explore Solutions <i class="fas fa-arrow-right ms-2"></i></a>
+                            <a href="contact.html" class="btn btn-secondary-custom btn-lg">Talk to Expert</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <i class="fas fa-comments fa-8x text-secondary opacity-50"></i>
                     </div>
                 </div>
-                
-                <!-- Right Side - Hero Image -->
-                <div class="col-lg-5 text-center">
-                    <img src="assets/images/hero/hero-image.png" alt="Immense Air Communication" loading="lazy" class="img-fluid hero-image">
+            </div>
+        </section>
+
+        <!-- ===== STATS SECTION ===== -->
+        <section class="py-5 bg-light-gray">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <span class="stat-number">10B+</span>
+                        <p class="stat-label">Messages Delivered Every Month</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <span class="stat-number">5000+</span>
+                        <p class="stat-label">Happy Clients Worldwide</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <span class="stat-number">99.9%</span>
+                        <p class="stat-label">Platform Uptime</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <span class="stat-number">7+</span>
+                        <p class="stat-label">Years of Industry Experience</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- ===== PRODUCTS SECTION ===== -->
+        <section class="py-5" id="products">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-badge">Our Products</span>
+                    <h2 class="section-title" style="font-size:2.75rem;font-weight:700;color:#0B1732;">POWERFUL SOLUTIONS FOR <br>EVERY BUSINESS NEED</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom">
+                            <div class="card-icon"><i class="fas fa-sms"></i></div>
+                            <h4 style="font-size:1.35rem;font-weight:600;">SMS Services</h4>
+                            <p style="font-size:.95rem;color:#6C757D;">Premium, transaction & OTP SMS services with high delivery and real-time reports.</p>
+                            <a href="products/bulk-sms.html" class="text-secondary fw-semibold" style="color:#FF6A00!important;text-decoration:none;">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom">
+                            <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
+                            <h4 style="font-size:1.35rem;font-weight:600;">WhatsApp Business API</h4>
+                            <p style="font-size:.95rem;color:#6C757D;">Automate, engage & support your customers with official WhatsApp Business API.</p>
+                            <a href="products/whatsapp-api.html" class="text-secondary fw-semibold" style="color:#FF6A00!important;text-decoration:none;">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom">
+                            <div class="card-icon"><i class="fas fa-comment-dots"></i></div>
+                            <h4 style="font-size:1.35rem;font-weight:600;">RCS Messaging</h4>
+                            <p style="font-size:.95rem;color:#6C757D;">Rich communication services with verified brand, interactive cards & more.</p>
+                            <a href="products/rcs.html" class="text-secondary fw-semibold" style="color:#FF6A00!important;text-decoration:none;">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom">
+                            <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                            <h4 style="font-size:1.35rem;font-weight:600;">Voice Solutions</h4>
+                            <p style="font-size:.95rem;color:#6C757D;">IVR, ODR, Missed Call, AI Voice & Voice Broadcast solutions for your business.</p>
+                            <a href="products/voice.html" class="text-secondary fw-semibold" style="color:#FF6A00!important;text-decoration:none;">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom">
+                            <div class="card-icon"><i class="fas fa-microphone-alt"></i></div>
+                            <h4 style="font-size:1.35rem;font-weight:600;">IVR & OBD Solutions</h4>
+                            <p style="font-size:.95rem;color:#6C757D;">Smart IVR flows & outbound dialing solutions to boost customer engagement.</p>
+                            <a href="products/ivr-obd.html" class="text-secondary fw-semibold" style="color:#FF6A00!important;text-decoration:none;">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom">
+                            <div class="card-icon"><i class="fas fa-code"></i></div>
+                            <h4 style="font-size:1.35rem;font-weight:600;">SMPP & API</h4>
+                            <p style="font-size:.95rem;color:#6C757D;">Powerful SMPP connectivity & API to integrate messaging into your applications.</p>
+                            <a href="products/smpp.html" class="text-secondary fw-semibold" style="color:#FF6A00!important;text-decoration:none;">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FEATURES SECTION ===== -->
+        <section class="py-5 bg-light-gray">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <i class="fas fa-bolt fa-3x text-secondary mb-3" style="color:#FF6A00!important;"></i>
+                        <h5 style="font-size:1.15rem;font-weight:500;">HIGH DELIVERY</h5>
+                        <p class="small" style="font-size:.875rem;color:#6C757D;">Optimal routes for maximum delivery & speed.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <i class="fas fa-shield-alt fa-3x text-secondary mb-3" style="color:#FF6A00!important;"></i>
+                        <h5 style="font-size:1.15rem;font-weight:500;">SECURE & RELIABLE</h5>
+                        <p class="small" style="font-size:.875rem;color:#6C757D;">Enterprise grade security with 24x7 monitoring.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <i class="fas fa-plug fa-3x text-secondary mb-3" style="color:#FF6A00!important;"></i>
+                        <h5 style="font-size:1.15rem;font-weight:500;">EASY INTEGRATION</h5>
+                        <p class="small" style="font-size:.875rem;color:#6C757D;">Simple APIs & SMPP for quick & seamless integration.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <i class="fas fa-headset fa-3x text-secondary mb-3" style="color:#FF6A00!important;"></i>
+                        <h5 style="font-size:1.15rem;font-weight:500;">24x7 SUPPORT</h5>
+                        <p class="small" style="font-size:.875rem;color:#6C757D;">Dedicated support team always ready to help you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INDUSTRIES SECTION ===== -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-badge">Industries</span>
+                    <h2 class="section-title" style="font-size:2.75rem;font-weight:700;color:#0B1732;">INDUSTRIES WE <span class="text-secondary" style="color:#FF6A00!important;">SERVE</span></h2>
+                    <p class="section-subtitle" style="font-size:1.125rem;color:#6C757D;max-width:600px;margin:0 auto 2rem;">Solutions that empower every industry. From retail to finance, we deliver communication solutions that drive engagement and growth.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-2 col-md-4 col-6 text-center">
+                        <i class="fas fa-shopping-cart fa-2x text-secondary mb-2" style="color:#FF6A00!important;"></i>
+                        <p class="small fw-semibold" style="font-size:.875rem;font-weight:600;color:#0B1732;">Retail</p>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 text-center">
+                        <i class="fas fa-university fa-2x text-secondary mb-2" style="color:#FF6A00!important;"></i>
+                        <p class="small fw-semibold" style="font-size:.875rem;font-weight:600;color:#0B1732;">Finance</p>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 text-center">
+                        <i class="fas fa-hospital fa-2x text-secondary mb-2" style="color:#FF6A00!important;"></i>
+                        <p class="small fw-semibold" style="font-size:.875rem;font-weight:600;color:#0B1732;">Healthcare</p>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 text-center">
+                        <i class="fas fa-graduation-cap fa-2x text-secondary mb-2" style="color:#FF6A00!important;"></i>
+                        <p class="small fw-semibold" style="font-size:.875rem;font-weight:600;color:#0B1732;">Education</p>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 text-center">
+                        <i class="fas fa-hotel fa-2x text-secondary mb-2" style="color:#FF6A00!important;"></i>
+                        <p class="small fw-semibold" style="font-size:.875rem;font-weight:600;color:#0B1732;">Hospitality</p>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 text-center">
+                        <i class="fas fa-truck fa-2x text-secondary mb-2" style="color:#FF6A00!important;"></i>
+                        <p class="small fw-semibold" style="font-size:.875rem;font-weight:600;color:#0B1732;">Logistics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section class="py-5" style="background:linear-gradient(135deg,#0B1732 0%,#1E3A5F 100%);">
+            <div class="container text-center">
+                <h2 class="text-white" style="color:#fff!important;font-size:2.75rem;font-weight:700;">Ready to Transform Your <br>Business Communication?</h2>
+                <p class="text-white-50 mb-4" style="max-width:600px;margin-left:auto;margin-right:auto;color:rgba(255,255,255,.5)!important;">Join thousands of businesses who trust Immense Smart Solutions for their communication needs.</p>
+                <a href="contact.html" class="btn btn-primary-custom btn-lg">Get Started Now <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </section>
+
+    </main>
 
     <!-- ============================================
-         STATS SECTION
+         FOOTER - WITH PRIVACY & TERMS LINKS
          ============================================ -->
-    <section class="py-5 bg-light-gray">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <span class="stat-number">10B+</span>
-                    <p class="stat-label">Messages Delivered Every Month</p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <span class="stat-number">5000+</span>
-                    <p class="stat-label">Happy Clients Worldwide</p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <span class="stat-number">99.9%</span>
-                    <p class="stat-label">Platform Uptime</p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <span class="stat-number">7+</span>
-                    <p class="stat-label">Years of Industry Experience</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================
-         PRODUCTS SECTION
-         ============================================ -->
-    <section class="py-5" id="products">
-        <div class="container">
-            <div class="text-center mb-5">
-                <span class="section-badge">Our Products</span>
-                <h2 class="section-title">POWERFUL SOLUTIONS FOR <br>EVERY BUSINESS NEED</h2>
-            </div>
-            <div class="row g-4">
-                <!-- Product 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-custom">
-                        <div class="card-icon"><i class="fas fa-sms"></i></div>
-                        <h4>SMS Services</h4>
-                        <p>Premium, transaction & OTP SMS services with high delivery and real-time reports.</p>
-                        <a href="products/bulk-sms.html" class="text-secondary fw-semibold">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <!-- Product 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-custom">
-                        <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
-                        <h4>WhatsApp Business API</h4>
-                        <p>Automate, engage & support your customers with official WhatsApp Business API.</p>
-                        <a href="products/whatsapp-api.html" class="text-secondary fw-semibold">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <!-- Product 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-custom">
-                        <div class="card-icon"><i class="fas fa-comment-dots"></i></div>
-                        <h4>RCS Messaging</h4>
-                        <p>Rich communication services with verified brand, interactive cards & more.</p>
-                        <a href="products/rcs.html" class="text-secondary fw-semibold">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <!-- Product 4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-custom">
-                        <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
-                        <h4>Voice Solutions</h4>
-                        <p>IVR, ODR, Missed Call, AI Voice & Voice Broadcast solutions for your business.</p>
-                        <a href="products/voice.html" class="text-secondary fw-semibold">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <!-- Product 5 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-custom">
-                        <div class="card-icon"><i class="fas fa-microphone-alt"></i></div>
-                        <h4>IVR & OBD Solutions</h4>
-                        <p>Smart IVR flows & outbound dialing solutions to boost customer engagement.</p>
-                        <a href="products/ivr-obd.html" class="text-secondary fw-semibold">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <!-- Product 6 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-custom">
-                        <div class="card-icon"><i class="fas fa-code"></i></div>
-                        <h4>SMPP & API</h4>
-                        <p>Powerful SMPP connectivity & API to integrate messaging into your applications.</p>
-                        <a href="products/smpp.html" class="text-secondary fw-semibold">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================
-         FEATURES SECTION
-         ============================================ -->
-    <section class="py-5 bg-light-gray">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <i class="fas fa-bolt fa-3x text-secondary mb-3"></i>
-                    <h5>HIGH DELIVERY</h5>
-                    <p class="small">Optimal routes for maximum delivery & speed.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <i class="fas fa-shield-alt fa-3x text-secondary mb-3"></i>
-                    <h5>SECURE & RELIABLE</h5>
-                    <p class="small">Enterprise grade security with 24x7 monitoring.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <i class="fas fa-plug fa-3x text-secondary mb-3"></i>
-                    <h5>EASY INTEGRATION</h5>
-                    <p class="small">Simple APIs & SMPP for quick & seamless integration.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <i class="fas fa-headset fa-3x text-secondary mb-3"></i>
-                    <h5>24x7 SUPPORT</h5>
-                    <p class="small">Dedicated support team always ready to help you.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================
-         CTA SECTION
-         ============================================ -->
-    <section class="py-5" style="background: var(--gradient-primary);">
-        <div class="container text-center">
-            <h2 class="text-white">Ready to Transform Your <br>Business Communication?</h2>
-            <p class="text-white-50 mb-4" style="max-width: 600px; margin-left: auto; margin-right: auto;">
-                Join thousands of businesses who trust Immense Smart Solutions for their communication needs.
-            </p>
-            <a href="contact.html" class="btn btn-primary-custom btn-lg">
-                Get Started Now <i class="fas fa-arrow-right ms-2"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- ============================================
-         FOOTER
-         ============================================ -->
-
-    <!-- ============================================
-         FOOTER - WITH SOCIAL LINKS
-         ============================================ -->
-    <footer style="background:#0B1732!important;border-top:3px solid #FF6A00;padding-top:3rem;padding-bottom:1.5rem;color:#fff;">
-        <div class="container">
-            <div class="row g-4">
-                <!-- Company Info -->
-                <div class="col-lg-4 col-md-6">
-                    <h4 style="font-size:1.6rem;font-weight:700;color:#fff;letter-spacing:-.5px;">IMMENSE <span style="color:#FF6A00;">AIR</span></h4>
-                    <p style="color:rgba(255,255,255,.5);font-size:.875rem;max-width:350px;margin-top:.75rem;">
-                        We empower businesses with intelligent communication solutions that drive engagement, 
-                        automation & growth.
-                    </p>
-                    <div class="mt-3">
-                        <a href="https://in.linkedin.com/company/immense-smart-solutions" target="_blank" class="social-link" style="display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none;margin-right:8px;"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.facebook.com/immensesmartsolutions/" target="_blank" class="social-link" style="display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none;margin-right:8px;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.youtube.com/@immensesmartsolutions" target="_blank" class="social-link" style="display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none;margin-right:8px;"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/immense_smart_solutions/" target="_blank" class="social-link" style="display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none;"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <!-- Products Links -->
-                <div class="col-lg-2 col-md-6">
-                    <h6 style="font-size:1rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;position:relative;padding-bottom:10px;">Products</h6>
-                    <ul style="list-style:none;padding-left:0;">
-                        <li style="margin-bottom:8px;"><a href="products/bulk-sms.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">SMS Services</a></li>
-                        <li style="margin-bottom:8px;"><a href="products/whatsapp-api.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">WhatsApp API</a></li>
-                        <li style="margin-bottom:8px;"><a href="products/rcs.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">RCS Messaging</a></li>
-                        <li style="margin-bottom:8px;"><a href="products/voice.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Voice Solutions</a></li>
-                        <li style="margin-bottom:8px;"><a href="products/ivr-obd.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">IVR & OBD</a></li>
-                        <li style="margin-bottom:8px;"><a href="products/smpp.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">SMPP & API</a></li>
-                    </ul>
-                </div>
-
-                <!-- Company Links -->
-                <div class="col-lg-2 col-md-6">
-                    <h6 style="font-size:1rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;position:relative;padding-bottom:10px;">Company</h6>
-                    <ul style="list-style:none;padding-left:0;">
-                        <li style="margin-bottom:8px;"><a href="about.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">About Us</a></li>
-                        <li style="margin-bottom:8px;"><a href="privacy-policy.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Privacy Policy</a></li>
-                        <li style="margin-bottom:8px;"><a href="terms.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Terms & Conditions</a></li>
-                        <li style="margin-bottom:8px;"><a href="contact.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-lg-4 col-md-6">
-                    <h6 style="font-size:1rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;position:relative;padding-bottom:10px;">Contact Us</h6>
-                    <ul style="list-style:none;padding-left:0;">
-                        <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;">
-                            <a href="tel:02228461099" style="color:rgba(255,255,255,.5)!important;text-decoration:none;">
-                                <i class="fas fa-phone me-2" style="color:#FF6A00;width:20px;"></i> 022 28461099
-                            </a>
-                        </li>
-                        <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;">
-                            <a href="https://wa.me/919768566466" target="_blank" style="color:rgba(255,255,255,.5)!important;text-decoration:none;">
-                                <i class="fab fa-whatsapp me-2" style="color:#25D366;width:20px;"></i> 9768 566 466
-                            </a>
-                        </li>
-                        <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;">
-                            <a href="mailto:info@immenseair.in" style="color:rgba(255,255,255,.5)!important;text-decoration:none;">
-                                <i class="fas fa-envelope me-2" style="color:#FF6A00;width:20px;"></i> info@immenseair.in
-                            </a>
-                        </li>
-                        <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;">
-                            <a href="https://www.immenseair.in" target="_blank" style="color:rgba(255,255,255,.5)!important;text-decoration:none;">
-                                <i class="fas fa-globe me-2" style="color:#FF6A00;width:20px;"></i> www.immenseair.in
-                            </a>
-                        </li>
-                        <li style="color:rgba(255,255,255,.5);font-size:.9rem;">
-                            <i class="fas fa-clock me-2" style="color:#FF6A00;width:20px;"></i> 9:30am – 8:00pm IST
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr style="border-color:rgba(255,255,255,.1);margin:1.5rem 0;">
-            <div class="text-center">
-                <p style="color:rgba(255,255,255,.5);font-size:.875rem;margin-bottom:0;">
-                    &copy; 2026 Immense Air Pvt. Ltd. All Rights Reserved. 
-                    <a href="privacy-policy.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;margin-left:10px;">Privacy Policy</a> 
-                    <a href="terms.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;margin-left:10px;">Terms & Conditions</a>
-                </p>
-            </div>
-        </div>
-    </footer>
         <!-- ============================================
          FOOTER - LIVE DETAILS
          ============================================ -->
-   
+        <!-- ============================================
+         FOOTER - WITH SOCIAL LINKS
+         ============================================ -->
+      <!-- ============================================
+         FOOTER - WITH WORKING EMAIL LINK
+         ============================================ -->
+    <footer style="background:#0B1732!important;border-top:3px solid #FF6A00;padding-top:3rem;padding-bottom:1.5rem;color:#fff;">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Company Info -->
+            <div class="col-lg-4 col-md-6">
+                <h4 style="font-size:1.6rem;font-weight:700;color:#fff;letter-spacing:-.5px;">IMMENSE <span style="color:#FF6A00;">AIR</span></h4>
+                <p style="color:rgba(255,255,255,.5);font-size:.875rem;max-width:350px;margin-top:.75rem;">
+                    We empower businesses with intelligent communication solutions that drive engagement, 
+                    automation & growth.
+                </p>
+                <div class="mt-3">
+                    <a href="https://in.linkedin.com/company/immense-smart-solutions" target="_blank" class="social-link" style="display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none;margin-right:8px;"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/immensesmartsolutions/" target="_blank" class="social-link" style="display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none;margin-right:8px;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@immensesmartsolutions" target="_blank" class="social-link" style="display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none;margin-right:8px;"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/immense_smart_solutions/" target="_blank" class="social-link" style="display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:50%;background:rgba(255,255,255,.06);transition:all .3s ease;font-size:14px;color:rgba(255,255,255,.5)!important;text-decoration:none;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Products Links -->
+            <div class="col-lg-2 col-md-6">
+                <h6 style="font-size:1rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;position:relative;padding-bottom:10px;">Products</h6>
+                <ul style="list-style:none;padding-left:0;">
+                    <li style="margin-bottom:8px;"><a href="products/bulk-sms.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">SMS Services</a></li>
+                    <li style="margin-bottom:8px;"><a href="products/whatsapp-api.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">WhatsApp API</a></li>
+                    <li style="margin-bottom:8px;"><a href="products/rcs.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">RCS Messaging</a></li>
+                    <li style="margin-bottom:8px;"><a href="products/voice.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Voice Solutions</a></li>
+                    <li style="margin-bottom:8px;"><a href="products/ivr-obd.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">IVR & OBD</a></li>
+                    <li style="margin-bottom:8px;"><a href="products/smpp.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">SMPP & API</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Links -->
+            <div class="col-lg-2 col-md-6">
+                <h6 style="font-size:1rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;position:relative;padding-bottom:10px;">Company</h6>
+                <ul style="list-style:none;padding-left:0;">
+                    <li style="margin-bottom:8px;"><a href="about.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">About Us</a></li>
+                    <li style="margin-bottom:8px;"><a href="privacy-policy.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Privacy Policy</a></li>
+                    <li style="margin-bottom:8px;"><a href="terms.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Terms & Conditions</a></li>
+                    <li style="margin-bottom:8px;"><a href="contact.html" style="color:rgba(255,255,255,.5)!important;text-decoration:none;font-size:.9rem;">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-4 col-md-6">
+                <h6 style="font-size:1rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.5px;position:relative;padding-bottom:10px;">Contact Us</h6>
+                <ul style="list-style:none;padding-left:0;">
+                    <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;">
+                        <a href="tel:02228461099" style="color:rgba(255,255,255,.5)!important;text-decoration:none;">
+                            <i class="fas fa-phone me-2" style="color:#FF6A00;width:20px;"></i> 022 28461099
+                        </a>
+                    </li>
+                    <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;">
+                        <a href="https://wa.me/919768566466" target="_blank" style="color:rgba(255,255,255,.5)!important;text-decoration:none;">
+                            <i class="fab fa-whatsapp me-2" style="color:#25D366;width:20px;"></i> 9768 566 466
+                        </a>
+                    </li>
+                    <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;">
+                        <!-- 👇 Email Link - Mailto + Gmail Fallback 👇 -->
+                        <a href="mailto:info@immenseair.in?subject=Enquiry%20from%20Immense%20Air%20Website&body=Hello%20Immense%20Air%20Team%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20services.%0A%0AThanks" 
+                           onclick="if(!confirm('Open your email app?')){window.open('https://mail.google.com/mail/?view=cm&fs=1&to=info@immenseair.in&su=Enquiry%20from%20Immense%20Air%20Website&body=Hello%20Immense%20Air%20Team%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20services.%0A%0AThanks','_blank');return false;}"
+                           style="color:rgba(255,255,255,.5)!important;text-decoration:none;cursor:pointer;">
+                            <i class="fas fa-envelope me-2" style="color:#FF6A00;width:20px;"></i> info@immenseair.in
+                        </a>
+                    </li>
+                    <li style="color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:8px;">
+                        <a href="https://www.immenseair.in" target="_blank" style="color:rgba(255,255,255,.5)!important;text-decoration:none;">
+                            <i class="fas fa-globe me-2" style="color:#FF6A00;width:20px;"></i> www.immenseair.in
+                        </a>
+                    </li>
+                    <li style="color:rgba(255,255,255,.5);font-size:.9rem;">
+                        <i class="fas fa-clock me-2" style="color:#FF6A00;width:20px;"></i> 9:30am – 8:00pm IST
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border-color:rgba(255,255,255,.1);margin:1.5rem 0;">
+        <div class="text-center">
+            <p style="color:rgba(255,255,255,.5);font-size:.875rem;margin-bottom:0;">
+                &copy; 2026 Immense Air Pvt. Ltd. All Rights Reserved. 
+            </p>
+        </div>
+    </div>
+</footer>
 
     <!-- ============================================
          SCRIPTS
